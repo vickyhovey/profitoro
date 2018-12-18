@@ -1,23 +1,21 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+    <h1>Welcome to Profitoro</h1>
+    <main-content></main-content>
   </div>
 </template>
 
 <script>
-export default {
-  name: 'App'
-}
+  import MainContent from './components/MainContent'
+  import LandingPage from './components/LandingPage'
+  export default {
+    name: 'app',
+    components: {
+      MainContent,
+      LandingPage
+    }
+  }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 </style>
